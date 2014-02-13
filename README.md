@@ -8,4 +8,4 @@ To install simply run:
 
 To test simply run:
 
-`browserify . -d -o bundle.js`
+`node build.js`

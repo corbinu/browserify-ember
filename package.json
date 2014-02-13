@@ -3,25 +3,13 @@
 	"version": "0.0.1",
 	"description": "Browserify Emberjs",
 	"dependencies": {
-		"browserify-shim": "~3.2.2"
+		"browserify-shim": "~2.0.10"
 	},
 	"main": "./main.js",
-	"browser": {
-		"jquery": "./bower_components/jquery/jquery.js",
-		"handlebars": "./bower_components/handlebars/handlebars.js",
-		"ember": "./bower_components/ember/ember.js"
-	},
-	"browserify-shim": {
-		"jquery": "$",
-		"ember": { "depends": [ "jquery:jquery", "handlebars:handlebars" ] }
-	},
-	"browserify": {
-		"transform": [ "browserify-shim" ]
-	},
 	"private": true,
 	"repository": {
 		"type": "git",
-		"url": ""
+		"url": "https://github.com/corbinu/browserify-ember"
 	},
 	"author": "Corbin Uselton",
 	"license": "MIT"
