@@ -7,9 +7,9 @@
 	},
 	"main": "./main.js",
 	"browser": {
-		"jquery": "./bower_components/jquery/jquery.js",
-		"handlebars": "./bower_components/handlebars/handlebars.js",
-		"ember": "./bower_components/ember/ember.js"
+		"jquery": "./Vendor/jquery/jquery.js",
+		"handlebars": "./Vendor/handlebars/handlebars.js",
+		"ember": "./Vendor/ember/ember.js"
 	},
 	"browserify-shim": {
 		"jquery": "$",

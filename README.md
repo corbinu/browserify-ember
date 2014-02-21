@@ -4,7 +4,9 @@ An attempt to demonstrate how to browserify Ember.js
 
 To install simply run:
 
-`sudo npm install; bower install`
+`sudo npm install`
+
+`./setup.sh`
 
 To test simply run:
 
