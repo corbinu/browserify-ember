@@ -6,8 +6,9 @@
     "browserify-shim": "~3.2.2"
   },
   "scripts": {
-    "start": "browserify main.js -d > out.js && open index.html",
-    "test": "BROWSERIFYSHIM_DIAGNOSTICS=1 browserify main.js -d > out.js && open index.html"
+    "fix-bower": "rm -rf `find ./bower_components -name package.json -print`",
+    "start": "npm run fix-bower && browserify main.js -d > out.js && open index.html",
+    "test": "npm run fix-bower && BROWSERIFYSHIM_DIAGNOSTICS=1 browserify main.js -d > out.js && open index.html"
   },
   "main": "./main.js",
   "browser": {
