@@ -1,28 +1,42 @@
 {
-	"name": "browserify-ember",
-	"version": "0.0.1",
-	"description": "Browserify Emberjs",
-	"dependencies": {
-		"browserify-shim": "~3.2.2"
-	},
-	"main": "./main.js",
-	"browser": {
-		"jquery": "./bower_components/jquery/jquery.js",
-		"handlebars": "./bower_components/handlebars/handlebars.js",
-		"ember": "./bower_components/ember/ember.js"
-	},
-	"browserify-shim": {
-		"jquery": "$",
-		"ember": { "depends": [ "jquery:jquery", "handlebars:handlebars" ] }
-	},
-	"browserify": {
-		"transform": [ "browserify-shim" ]
-	},
-	"private": true,
-	"repository": {
-		"type": "git",
-		"url": ""
-	},
-	"author": "Corbin Uselton",
-	"license": "MIT"
+  "name": "browserify-ember",
+  "version": "0.0.1",
+  "description": "Browserify Emberjs",
+  "dependencies": {
+    "browserify-shim": "~3.2.2"
+  },
+  "scripts": {
+    "start": "browserify main.js -d > out.js && open index.html",
+    "test": "BROWSERIFYSHIM_DIAGNOSTICS=1 browserify main.js -d > out.js && open index.html"
+  },
+  "main": "./main.js",
+  "browser": {
+    "jquery": "./bower_components/jquery/jquery.js",
+    "handlebars": "./bower_components/handlebars/handlebars.js",
+    "ember": "./bower_components/ember/ember.js"
+  },
+  "browserify-shim": {
+    "jquery": "$",
+    "ember": {
+      "depends": [
+        "jquery:$",
+        "handlebars:Handlebars"
+      ]
+    }
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Corbin Uselton",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "~3.30.1"
+  }
 }
