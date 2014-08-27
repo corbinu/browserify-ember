@@ -1,5 +1,24 @@
 Browserify Ember
 =================
+
+***
+Please note I no longer support the idea of using Browserify.
+
+For Ember please refer to [http://www.ember-cli.com](http://www.ember-cli.com)
+
+For front-end packages use bower: [http://bower.io](http://bower.io)
+
+If you need an AMD loader use this: [http://www.github.com/stefanpenner/loader.js](http://www.github.com/stefanpenner/loader.js)
+
+If you need a ES6 module transpiler: [http://esnext.github.io/es6-module-transpiler/](http://esnext.github.io/es6-module-transpiler/)
+
+Still need browserify? Feel free to either ask me an alternative to your specific problem
+
+OR
+
+Refer for the official way to use it in browserify [https://github.com/thlorenz/browserify-shim](https://github.com/thlorenz/browserify-shim)
+***
+
 An attempt to demonstrate how to browserify Ember.js
 
 To install simply run:
