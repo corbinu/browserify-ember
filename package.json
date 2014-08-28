@@ -18,7 +18,9 @@
   },
   "browserify-shim": {
     "jquery": "$",
+    "handlebars": "Handlebars",
     "ember": {
+      "exports": "Ember",
       "depends": [
         "jquery:$",
         "handlebars:Handlebars"
